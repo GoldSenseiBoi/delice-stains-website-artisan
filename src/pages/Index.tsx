@@ -28,15 +28,16 @@ const Index = () => {
           <p className="font-sans text-lg tracking-wider mb-10 max-w-xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '1.4s' }}>
             Le goût de l'authenticité chaque matin
           </p>
-          <div className="opacity-0 animate-fade-in " style={{ animationDelay: '1.8s' }}>
-            <Link 
-              to="/savoir-faire" 
-              className="btn-secondary group"
-            >
-              Découvrir notre savoir-faire
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </Link>
-          </div>
+          <div className="opacity-0 animate-fade-in" style={{ animationDelay: '1.8s' }}>
+          <Link 
+            to="/savoir-faire" 
+            className="inline-flex items-center justify-center px-6 py-3 border border-white text-white font-medium tracking-wide rounded-md transition duration-300 group hover:bg-white hover:text-black"
+          >
+            Découvrir notre savoir-faire
+            <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
+          </Link>
+        </div>
+
         </div>
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
           <ArrowDown className="text-white/70 h-6 w-6" />
