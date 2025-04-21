@@ -75,6 +75,8 @@ export default {
 			fontFamily: {
 				'script': ['"Dancing Script"', 'cursive'],
 				'sans': ['Roboto', 'sans-serif'],
+				'cormorant': ['"Cormorant Garamond"', 'serif'],
+				'montserrat': ['Montserrat', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
