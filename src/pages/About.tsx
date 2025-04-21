@@ -5,155 +5,166 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div className="flex flex-col">
-      {/* Header Banner */}
-      <section className="relative py-20 bg-bakery-brown-dark text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="font-script text-5xl mb-4">À Propos</h1>
-          <p className="max-w-2xl mx-auto">
-            Découvrez l'histoire et les valeurs de notre boulangerie artisanale
-          </p>
+      {/* Hero Section */}
+      <section className="relative h-[60vh] bg-bakery-brown-dark">
+        <div className="absolute inset-0">
+          <img
+            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop"
+            alt="Boulangerie artisanale"
+            className="w-full h-full object-cover opacity-40"
+          />
+        </div>
+        <div className="relative h-full flex items-center justify-center text-white">
+          <div className="text-center">
+            <h1 className="font-script text-6xl mb-4">Notre Histoire</h1>
+            <p className="max-w-xl mx-auto text-lg">
+              Une tradition familiale depuis plus de 10 ans
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* Our Story */}
-      <section className="py-16 bg-white">
+      {/* Story Section */}
+      <section className="py-24">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="font-script text-3xl text-center text-bakery-brown-dark mb-8">Notre Histoire</h2>
-            
-            <div className="space-y-6 text-bakery-brown">
-              <p>
-                Délice de Stains est une boulangerie artisanale créée par la famille Dupont en 2010. 
-                Ce qui a commencé comme un rêve de partager leur passion pour le pain et les viennoiseries 
-                traditionnels s'est transformé en une aventure familiale qui dure depuis plus de dix ans.
-              </p>
-              
-              <p>
-                Marc Dupont, maître boulanger passionné, a appris son métier auprès des meilleurs artisans de France. 
-                Après des années d'expérience dans des boulangeries renommées, il a décidé de créer sa propre enseigne 
-                à Stains, accompagné de son épouse Marie, pâtissière de formation.
-              </p>
-              
-              <p>
-                Au fil des années, Délice de Stains est devenu un repère incontournable pour les habitants du quartier 
-                et des environs, à la recherche de produits authentiques et de qualité. La boulangerie s'est forgée une 
-                réputation d'excellence grâce à son engagement envers les méthodes traditionnelles et les ingrédients de qualité.
-              </p>
-              
-              <p>
-                Aujourd'hui, la deuxième génération de la famille commence à s'impliquer dans l'entreprise, 
-                perpétuant ainsi les traditions tout en apportant une touche de modernité à cette belle aventure artisanale.
-              </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div className="space-y-6">
+              <h2 className="font-script text-4xl text-bakery-brown-dark">Notre Savoir-faire</h2>
+              <div className="prose prose-lg text-bakery-brown">
+                <p>
+                  Délice de Stains est une boulangerie artisanale où chaque pain, 
+                  chaque viennoiserie raconte une histoire de passion et de tradition.
+                </p>
+                <p>
+                  Depuis 2010, notre famille perpétue les méthodes traditionnelles 
+                  de fabrication, en utilisant des farines sélectionnées et un 
+                  savoir-faire transmis de génération en génération.
+                </p>
+              </div>
+            </div>
+            <div className="relative h-[600px] rounded-lg overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=2075&auto=format&fit=crop"
+                alt="Fabrication du pain"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-16 bg-bakery-beige-light">
+      {/* Values Section */}
+      <section className="py-24 bg-bakery-beige-light">
         <div className="container mx-auto px-4">
-          <h2 className="font-script text-3xl text-center text-bakery-brown-dark mb-12">Nos Valeurs</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h2 className="font-script text-4xl text-center text-bakery-brown-dark mb-16">
+            Nos Valeurs
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <ValueCard 
               title="Tradition" 
-              description="Nous perpétuons les méthodes traditionnelles de boulangerie, transmises de génération en génération."
+              description="Des méthodes authentiques transmises de génération en génération"
+              imageSrc="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=2026&auto=format&fit=crop"
             />
             <ValueCard 
               title="Qualité" 
-              description="Nous sélectionnons rigoureusement nos ingrédients pour vous offrir des produits d'exception."
+              description="Une sélection rigoureuse des meilleurs ingrédients"
+              imageSrc="https://images.unsplash.com/photo-1549413468-f14c1c2728b3?q=80&w=2070&auto=format&fit=crop"
             />
             <ValueCard 
-              title="Authenticité" 
-              description="Nous créons des produits artisanaux, sans additifs ni conservateurs, pour préserver les saveurs authentiques."
+              title="Passion" 
+              description="Un amour du métier qui se retrouve dans chacune de nos créations"
+              imageSrc="https://images.unsplash.com/photo-1516684947595-5c5f8b1b87b5?q=80&w=2070&auto=format&fit=crop"
             />
           </div>
         </div>
       </section>
 
-      {/* Team */}
-      <section className="py-16 bg-white">
+      {/* Team Section */}
+      <section className="py-24">
         <div className="container mx-auto px-4">
-          <h2 className="font-script text-3xl text-center text-bakery-brown-dark mb-12">Notre Équipe</h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            <TeamMember 
-              name="Marc Dupont" 
-              role="Maître Boulanger, Fondateur" 
-              description="Fort de 25 ans d'expérience, Marc est l'âme de notre boulangerie. Son expertise et sa passion se retrouvent dans chaque pain qui sort de notre four."
-              imageSrc="https://images.unsplash.com/photo-1583394293214-28ded15ee548?q=80&w=1480&auto=format&fit=crop"
-            />
-            <TeamMember 
-              name="Marie Dupont" 
-              role="Pâtissière, Co-fondatrice" 
-              description="Marie apporte sa créativité et sa minutie à toutes nos pâtisseries. Son flan pâtissier est devenu l'une des spécialités les plus appréciées de la boulangerie."
-              imageSrc="https://images.unsplash.com/photo-1545224144-2d2016b5a151?q=80&w=1480&auto=format&fit=crop"
-            />
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-script text-4xl text-center text-bakery-brown-dark mb-16">
+              Notre Équipe
+            </h2>
+            <div className="space-y-16">
+              <TeamMember 
+                name="Marc Dupont"
+                role="Maître Boulanger"
+                description="Avec plus de 25 ans d'expérience, Marc perpétue la tradition de la boulangerie artisanale française avec passion et expertise."
+                imageSrc="https://images.unsplash.com/photo-1583394293214-28ded15ee548?q=80&w=1480&auto=format&fit=crop"
+                imagePosition="left"
+              />
+              <TeamMember 
+                name="Marie Dupont"
+                role="Pâtissière"
+                description="Marie apporte sa créativité et sa minutie à chaque création, rendant chaque pâtisserie unique et délicieuse."
+                imageSrc="https://images.unsplash.com/photo-1545224144-2d2016b5a151?q=80&w=1480&auto=format&fit=crop"
+                imagePosition="right"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Commitment */}
-      <section className="py-16 bg-bakery-beige-light">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="font-script text-3xl text-bakery-brown-dark mb-8">Notre Engagement</h2>
-            
-            <p className="text-bakery-brown mb-8">
-              Chez Délice de Stains, nous nous engageons à :
-            </p>
-            
-            <ul className="text-left space-y-4 mb-8 inline-block mx-auto">
-              <li className="flex items-start">
-                <span className="mr-3 text-bakery-brown-dark">•</span>
-                <p>Préserver le patrimoine boulanger français en respectant les méthodes artisanales.</p>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3 text-bakery-brown-dark">•</span>
-                <p>Sélectionner des ingrédients de qualité, locaux lorsque c'est possible.</p>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3 text-bakery-brown-dark">•</span>
-                <p>Offrir à nos clients des produits frais, fabriqués chaque jour dans notre laboratoire.</p>
-              </li>
-              <li className="flex items-start">
-                <span className="mr-3 text-bakery-brown-dark">•</span>
-                <p>Maintenir une relation de proximité avec notre clientèle et notre communauté.</p>
-              </li>
-            </ul>
-            
-            <Link 
-              to="/contact" 
-              className="inline-flex items-center bg-bakery-brown text-white px-6 py-3 rounded-md hover:bg-bakery-brown-dark transition-colors duration-300"
-            >
-              Nous contacter
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </div>
+      {/* Contact CTA */}
+      <section className="py-24 bg-bakery-brown-dark text-white">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-script text-4xl mb-6">Venez nous rencontrer</h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto">
+            Découvrez nos produits artisanaux et partagez notre passion pour la boulangerie traditionnelle
+          </p>
+          <Link 
+            to="/contact" 
+            className="inline-flex items-center bg-white text-bakery-brown-dark px-8 py-3 rounded-md hover:bg-bakery-cream transition-colors duration-300"
+          >
+            Nous contacter
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
         </div>
       </section>
     </div>
   );
 };
 
-const ValueCard = ({ title, description }: { title: string; description: string }) => {
+const ValueCard = ({ title, description, imageSrc }: { title: string; description: string; imageSrc: string }) => {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-md text-center">
+    <div className="group">
+      <div className="relative h-80 mb-6 overflow-hidden rounded-lg">
+        <img 
+          src={imageSrc} 
+          alt={title} 
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+      </div>
       <h3 className="font-sans font-bold text-xl text-bakery-brown-dark mb-3">{title}</h3>
       <p className="text-bakery-brown">{description}</p>
     </div>
   );
 };
 
-const TeamMember = ({ name, role, description, imageSrc }: { name: string; role: string; description: string; imageSrc: string }) => {
+const TeamMember = ({ 
+  name, 
+  role, 
+  description, 
+  imageSrc, 
+  imagePosition = 'left' 
+}: { 
+  name: string; 
+  role: string; 
+  description: string; 
+  imageSrc: string;
+  imagePosition?: 'left' | 'right';
+}) => {
   return (
-    <div className="flex flex-col md:flex-row items-center gap-6">
-      <div className="w-36 h-36 rounded-full overflow-hidden flex-shrink-0">
-        <img src={imageSrc} alt={name} className="w-full h-full object-cover" />
+    <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center ${
+      imagePosition === 'right' ? 'md:flex-row-reverse' : ''
+    }`}>
+      <div className="relative h-[400px] rounded-lg overflow-hidden">
+        <img src={imageSrc} alt={name} className="absolute inset-0 w-full h-full object-cover" />
       </div>
-      <div>
-        <h3 className="font-sans font-bold text-xl text-bakery-brown-dark">{name}</h3>
-        <p className="font-medium text-bakery-brown-light mb-2">{role}</p>
+      <div className="text-center md:text-left">
+        <h3 className="font-sans font-bold text-2xl text-bakery-brown-dark">{name}</h3>
+        <p className="font-medium text-bakery-brown-light mt-2 mb-4">{role}</p>
         <p className="text-bakery-brown">{description}</p>
       </div>
     </div>
@@ -161,3 +172,4 @@ const TeamMember = ({ name, role, description, imageSrc }: { name: string; role:
 };
 
 export default About;
+
