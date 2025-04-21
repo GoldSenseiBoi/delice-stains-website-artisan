@@ -1,5 +1,5 @@
-import { IconBaguette, IconCookie, IconCake } from "@tabler/icons-react";
 import { Separator } from "@/components/ui/separator";
+import { IconBaguette, IconCake, IconCookie } from "@tabler/icons-react";
 
 const SavoirFaire = () => {
   return (
@@ -7,7 +7,7 @@ const SavoirFaire = () => {
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center z-0 animate-zoom-in opacity-40"
+          className="absolute inset-0 bg-cover bg-center z-0 animate-zoom-in opacity-90"
           style={{ 
             backgroundImage: "url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=1800')",
             backgroundPosition: "center",
@@ -55,7 +55,7 @@ const SavoirFaire = () => {
       <Separator className="divider max-w-xl" />
 
       {/* Our Processes */}
-      <section className="section-padding bg-bakery-dark-brown/50">
+      <section className="section-padding bg-bakery-dark-brown/0">
         <div className="container mx-auto">
           <h2 className="font-sans text-4xl text-center tracking-widest mb-16 opacity-0 animate-fade-in">
             NOS PROCÉDÉS
@@ -123,7 +123,7 @@ const SavoirFaire = () => {
       <Separator className="divider max-w-xl" />
 
       {/* Call to Action */}
-      <section className="section-padding bg-bakery-dark-brown/50">
+      <section className="section-padding bg-bakery-dark-brown/0">
         <div className="container mx-auto text-center">
           <h2 className="font-sans text-3xl tracking-widest mb-8 opacity-0 animate-fade-in">DÉCOUVRIR NOS CRÉATIONS</h2>
           

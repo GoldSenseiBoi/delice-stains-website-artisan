@@ -1,5 +1,4 @@
 
-import React from 'react';
 
 const Hero = () => {
   return (
@@ -8,10 +7,10 @@ const Hero = () => {
         <img
           src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop"
           alt="Boulangerie artisanale"
-          className="w-full h-full object-cover opacity-30 animate-zoom-in"
+          className="w-full h-full object-cover opacity-90 animate-zoom-in"
         />
       </div>
-      <div className="absolute inset-0 bg-bakery-brown/20 z-[1]"></div>
+      <div className="absolute inset-0 bg-bakery-brown/0 z-[1]"></div>
       <div className="relative h-full flex items-center justify-center text-bakery-brown-dark z-10">
         <div className="text-center">
           <h1 className="font-sans text-5xl tracking-widest mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>

@@ -1,5 +1,5 @@
-import { Phone, MapPin, Instagram, Clock, ArrowRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import { ArrowRight, Clock, Instagram, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -10,7 +10,7 @@ const Contact = () => {
           <img
             src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?q=80&w=2070&auto=format&fit=crop"
             alt="Boulangerie artisanale"
-            className="w-full h-full object-cover opacity-20 animate-zoom-in"
+            className="w-full h-full object-cover opacity-80 animate-zoom-in"
           />
         </div>
         <div className="absolute inset-0 bg-black/60 z-[1]"></div>
@@ -54,7 +54,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-sans text-xl tracking-wide mb-4">TÉLÉPHONE</h3>
-                      <p className="text-foreground/80">01 XX XX XX XX</p>
+                      <p className="text-foreground/80">01 23 45 67 89</p>
                     </div>
                   </div>
                   
@@ -117,7 +117,7 @@ const Contact = () => {
       <Separator className="divider max-w-xl" />
 
       {/* Contact Form */}
-      <section className="section-padding bg-bakery-dark-brown/50">
+      <section className="section-padding bg-bakery-dark-brown/0">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto">
             <h2 className="font-sans text-3xl text-center tracking-widest mb-10 opacity-0 animate-fade-in">NOUS ÉCRIRE</h2>

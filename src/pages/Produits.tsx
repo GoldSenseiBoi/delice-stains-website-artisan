@@ -1,5 +1,5 @@
-import { IconBaguette, IconCake, IconCookie, IconBread } from "@tabler/icons-react";
 import { Separator } from "@/components/ui/separator";
+import { IconBaguette, IconBread, IconCake, IconCookie } from "@tabler/icons-react";
 
 const Produits = () => {
   return (
@@ -8,9 +8,9 @@ const Produits = () => {
       <section className="relative py-20 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?q=80&w=1470&auto=format&fit=crop"
+            src="images/produit.jpg"
             alt="Boulangerie artisanale"
-            className="w-full h-full object-cover opacity-20 animate-zoom-in"
+            className="w-full h-full object-cover opacity-90 animate-zoom-in"
           />
         </div>
         <div className="absolute inset-0 bg-black/60 z-[1]"></div>
@@ -90,7 +90,7 @@ const Produits = () => {
       <ProductCategory 
         title="NOS VIENNOISERIES"
         icon={<IconBread className="h-8 w-8" />}
-        bgColor="bg-bakery-dark-brown/50"
+        bgColor="bg-bakery-dark-brown/0"
         products={[
           {
             name: "CROISSANT AU BEURRE",
@@ -172,7 +172,7 @@ const Produits = () => {
       <ProductCategory 
         title="NOS SNACKS ET SPÉCIALITÉS"
         icon={<IconCookie className="h-8 w-8" />}
-        bgColor="bg-bakery-dark-brown/50"
+        bgColor="bg-bakery-dark-brown/0"
         products={[
           {
             name: "QUICHE LORRAINE",

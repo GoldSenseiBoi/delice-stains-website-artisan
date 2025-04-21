@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import { ArrowRight, ArrowDown } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 import { IconBaguette, IconCake } from "@tabler/icons-react";
+import { ArrowDown, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -9,7 +9,7 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center z-0 animate-zoom-in opacity-40"
+          className="absolute inset-0 bg-cover bg-center z-0 animate-zoom-in opacity-90"
           style={{ 
             backgroundImage: "url('https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1472&auto=format&fit=crop')",
           }}
@@ -28,7 +28,7 @@ const Index = () => {
           <p className="font-sans text-lg tracking-wider mb-10 max-w-xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '1.4s' }}>
             Le goût de l'authenticité chaque matin
           </p>
-          <div className="opacity-0 animate-fade-in" style={{ animationDelay: '1.8s' }}>
+          <div className="opacity-0 animate-fade-in " style={{ animationDelay: '1.8s' }}>
             <Link 
               to="/savoir-faire" 
               className="btn-secondary group"

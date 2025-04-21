@@ -1,12 +1,12 @@
 
+import { Instagram, MapPin, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Phone, MapPin, Instagram } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-bakery-brown-dark text-bakery-cream py-8">
+    <footer className="bg-bakery-dark-brown text-bakery-cream py-8">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Description */}
@@ -39,7 +39,7 @@ const Footer = () => {
               </p>
               <p className="flex items-center justify-center md:justify-start gap-2">
                 <Phone size={18} />
-                <span>01 XX XX XX XX</span>
+                <span>01 23 45 67 89</span>
               </p>
               <a 
                 href="https://www.instagram.com/delice2stains" 
