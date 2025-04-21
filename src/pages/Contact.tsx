@@ -1,10 +1,9 @@
-
 import { Phone, MapPin, Instagram, Clock, ArrowRight } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col bg-bakery-dark">
+    <div className="flex flex-col bg-bakery-beige-light">
       {/* Header Banner */}
       <section className="relative py-20 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

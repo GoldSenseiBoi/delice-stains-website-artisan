@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { ArrowRight, ArrowDown } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
@@ -6,7 +5,7 @@ import { IconBaguette, IconCake } from "@tabler/icons-react";
 
 const Index = () => {
   return (
-    <div className="flex flex-col bg-bakery-dark">
+    <div className="flex flex-col bg-bakery-beige-light">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div 
@@ -81,7 +80,7 @@ const Index = () => {
       <Separator className="divider max-w-xl" />
 
       {/* Featured Products */}
-      <section className="section-padding bg-bakery-dark-brown/50">
+      <section className="section-padding bg-bakery-beige-medium/50">
         <div className="container mx-auto">
           <h2 className="font-sans text-4xl text-center tracking-widest mb-16 opacity-0 animate-fade-in">NOS PRODUITS</h2>
           

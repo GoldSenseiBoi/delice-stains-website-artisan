@@ -1,10 +1,9 @@
-
 import { IconBaguette, IconCake, IconCookie, IconBread } from "@tabler/icons-react";
 import { Separator } from "@/components/ui/separator";
 
 const Produits = () => {
   return (
-    <div className="flex flex-col bg-bakery-dark">
+    <div className="flex flex-col bg-bakery-beige-light">
       {/* Header Banner */}
       <section className="relative py-20 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">

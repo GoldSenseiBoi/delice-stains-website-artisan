@@ -1,10 +1,9 @@
-
 import { IconBaguette, IconCookie, IconCake } from "@tabler/icons-react";
 import { Separator } from "@/components/ui/separator";
 
 const SavoirFaire = () => {
   return (
-    <div className="flex flex-col bg-bakery-dark">
+    <div className="flex flex-col bg-bakery-beige-light">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div 
