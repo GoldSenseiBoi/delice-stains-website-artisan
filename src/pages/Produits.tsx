@@ -10,7 +10,7 @@ const Produits = () => {
     <img
       src="./images/produit.jpg"
       alt="Boulangerie artisanale"
-      className="w-full h-full object-cover opacity-60 animate-zoom-in"
+      className="w-full h-full object-cover opacity-80 animate-zoom-in"
     />
   </div>
   <div className="absolute inset-0 bg-black/50 z-[1]"></div>

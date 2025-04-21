@@ -1,5 +1,4 @@
 
-import React from 'react';
 
 const StorySection = () => {
   return (
@@ -26,7 +25,7 @@ const StorySection = () => {
           </div>
           <div className="relative h-[600px] overflow-hidden opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <img
-              src="https://images.unsplash.com/photo-1509365465985-25d11c17e812?q=80&w=2075&auto=format&fit=crop"
+              src="../public/images/savoir.jpg"
               alt="Fabrication du pain"
               className="absolute inset-0 w-full h-full object-cover"
             />
