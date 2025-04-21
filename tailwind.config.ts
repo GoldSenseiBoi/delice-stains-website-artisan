@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -70,11 +71,15 @@ export default {
 					'brown': '#795C34',
 					'brown-dark': '#59422E',
 					'cream': '#FFFBF2',
+					'dark': '#1A1A1A',
+					'dark-brown': '#2C2522',
+					'dark-beige': '#3A3531',
+					'off-white': '#F7F7F7',
 				}
 			},
 			fontFamily: {
 				'script': ['"Dancing Script"', 'cursive'],
-				'sans': ['Roboto', 'sans-serif'],
+				'sans': ['Josefin Sans', 'sans-serif'],
 				'cormorant': ['"Cormorant Garamond"', 'serif'],
 				'montserrat': ['Montserrat', 'sans-serif'],
 			},
@@ -99,11 +104,51 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(10px)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'zoom-in': {
+					'0%': {
+						transform: 'scale(1.05)'
+					},
+					'100%': {
+						transform: 'scale(1)'
+					}
+				},
+				'reveal': {
+					'0%': {
+						transform: 'scaleX(0)'
+					},
+					'100%': {
+						transform: 'scaleX(1)'
+					}
+				},
+				'slide-up': {
+					'0%': {
+						transform: 'translateY(20px)',
+						opacity: '0'
+					},
+					'100%': {
+						transform: 'translateY(0)',
+						opacity: '1'
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.8s ease-out forwards',
+				'zoom-in': 'zoom-in 1.5s ease-out forwards',
+				'reveal': 'reveal 1.2s ease-out forwards',
+				'slide-up': 'slide-up 0.8s ease-out forwards'
 			}
 		}
 	},

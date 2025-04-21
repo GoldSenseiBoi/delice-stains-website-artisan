@@ -1,36 +1,44 @@
 
 import { IconBaguette, IconCookie, IconCake } from "@tabler/icons-react";
+import { Separator } from "@/components/ui/separator";
 
 const SavoirFaire = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-bakery-dark">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div 
-          className="absolute inset-0 bg-cover bg-center z-0"
+          className="absolute inset-0 bg-cover bg-center z-0 animate-zoom-in opacity-40"
           style={{ 
-            backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=1800')",
+            backgroundImage: "url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=1800')",
             backgroundPosition: "center",
           }}
         />
+        <div className="absolute inset-0 bg-black/60 z-[1]"></div>
         <div className="container relative z-10 px-6 text-center">
-          <h1 className="font-cormorant text-6xl md:text-7xl text-white mb-6 opacity-0 animate-[fade-in_1s_ease-out_0.5s_forwards]">
-            Notre Savoir-Faire
+          <h1 className="font-sans text-5xl md:text-6xl tracking-widest mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            NOTRE SAVOIR-FAIRE
           </h1>
-          <p className="font-montserrat text-lg md:text-xl text-white/90 max-w-2xl mx-auto opacity-0 animate-[fade-in_1s_ease-out_0.8s_forwards]">
+          
+          <div className="h-px w-24 mx-auto bg-white/30 mb-8 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.8s' }}></div>
+          
+          <p className="font-sans text-lg tracking-wider max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
             La tradition boulangère transmise de génération en génération
           </p>
         </div>
       </section>
 
       {/* Introduction */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
+      <section className="section-padding">
+        <div className="container mx-auto">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-cormorant text-4xl md:text-5xl text-center text-bakery-brown-dark mb-12">
-              L'art de la boulangerie artisanale
+            <h2 className="font-sans text-4xl text-center tracking-widest mb-10 opacity-0 animate-fade-in">
+              L'ART DE LA BOULANGERIE
             </h2>
-            <div className="font-montserrat text-lg space-y-6 text-bakery-brown leading-relaxed">
+            
+            <div className="h-px w-16 mx-auto bg-primary/70 mb-12 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.3s' }}></div>
+            
+            <div className="font-sans text-foreground/80 space-y-8 leading-relaxed opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
               <p>
                 Chez Délice de Stains, nous perpétuons un savoir-faire artisanal transmis de génération en génération. 
                 Notre passion pour le pain et les viennoiseries nous pousse à rechercher l'excellence dans chacune de nos créations.
@@ -45,45 +53,51 @@ const SavoirFaire = () => {
         </div>
       </section>
 
+      <Separator className="divider max-w-xl" />
+
       {/* Our Processes */}
-      <section className="py-24 bg-bakery-cream">
-        <div className="container mx-auto px-6">
-          <h2 className="font-cormorant text-4xl md:text-5xl text-center text-bakery-brown-dark mb-16">
-            Nos procédés de fabrication
+      <section className="section-padding bg-bakery-dark-brown/50">
+        <div className="container mx-auto">
+          <h2 className="font-sans text-4xl text-center tracking-widest mb-16 opacity-0 animate-fade-in">
+            NOS PROCÉDÉS
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <Process 
-              title="Pétrissage lent" 
+              title="PÉTRISSAGE LENT" 
               description="Nous pratiquons un pétrissage lent qui préserve toutes les qualités de la farine et permet un meilleur développement des arômes."
-              icon={<IconBaguette className="w-12 h-12" />}
+              icon={<IconBaguette className="w-10 h-10" />}
               delay={0.3}
             />
             <Process 
-              title="Fermentation longue" 
+              title="FERMENTATION LONGUE" 
               description="Notre pâte fermente pendant plusieurs heures, ce qui lui confère une texture aérée et un goût développé, sans additifs ni améliorants."
-              icon={<IconCookie className="w-12 h-12" />}
+              icon={<IconCookie className="w-10 h-10" />}
               delay={0.6}
             />
             <Process 
-              title="Cuisson traditionnelle" 
+              title="CUISSON TRADITIONNELLE" 
               description="Nos produits sont cuits dans un four à sole, garantissant une croûte croustillante et une mie moelleuse."
-              icon={<IconCake className="w-12 h-12" />}
+              icon={<IconCake className="w-10 h-10" />}
               delay={0.9}
             />
           </div>
         </div>
       </section>
 
+      <Separator className="divider max-w-xl" />
+
       {/* Our Ingredients */}
-      <section className="py-24 bg-white">
-        <div className="container mx-auto px-6">
-          <h2 className="font-cormorant text-4xl md:text-5xl text-center text-bakery-brown-dark mb-12">
-            Des ingrédients de qualité
+      <section className="section-padding">
+        <div className="container mx-auto">
+          <h2 className="font-sans text-4xl text-center tracking-widest mb-10 opacity-0 animate-fade-in">
+            NOS INGRÉDIENTS
           </h2>
           
+          <div className="h-px w-16 mx-auto bg-primary/70 mb-16 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.3s' }}></div>
+          
           <div className="max-w-3xl mx-auto">
-            <p className="font-montserrat text-lg text-bakery-brown mb-12 text-center">
+            <p className="font-sans text-foreground/80 mb-16 text-center opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
               La qualité de nos produits commence par le choix rigoureux de nos ingrédients
             </p>
             
@@ -91,35 +105,42 @@ const SavoirFaire = () => {
               {ingredients.map((ingredient, index) => (
                 <div 
                   key={ingredient.title}
-                  className="p-8 bg-bakery-cream rounded-2xl opacity-0 animate-[fade-in_1s_ease-out_forwards]"
+                  className="border border-border/30 p-8 hover:border-primary/50 transition-all duration-300 opacity-0 animate-fade-in"
                   style={{ animationDelay: `${0.3 * (index + 1)}s` }}
                 >
-                  <h3 className="font-cormorant text-2xl text-bakery-brown-dark mb-4">{ingredient.title}</h3>
-                  <p className="font-montserrat text-bakery-brown">{ingredient.description}</p>
+                  <h3 className="font-sans text-xl tracking-wide mb-6">{ingredient.title}</h3>
+                  <p className="font-sans text-foreground/70">{ingredient.description}</p>
                 </div>
               ))}
             </div>
             
-            <blockquote className="font-cormorant text-2xl text-center italic text-bakery-brown mt-16">
+            <blockquote className="font-sans text-xl text-center italic text-foreground/90 mt-16 opacity-0 animate-fade-in" style={{ animationDelay: '1.6s' }}>
               "Le secret d'un bon pain, c'est la patience et le respect des ingrédients."
             </blockquote>
           </div>
         </div>
       </section>
 
+      <Separator className="divider max-w-xl" />
+
       {/* Call to Action */}
-      <section className="py-16 bg-bakery-brown-dark text-white">
-        <div className="container mx-auto px-6 text-center">
-          <h2 className="font-cormorant text-4xl mb-6">Venez découvrir nos créations</h2>
-          <p className="font-montserrat max-w-2xl mx-auto mb-8">
+      <section className="section-padding bg-bakery-dark-brown/50">
+        <div className="container mx-auto text-center">
+          <h2 className="font-sans text-3xl tracking-widest mb-8 opacity-0 animate-fade-in">DÉCOUVRIR NOS CRÉATIONS</h2>
+          
+          <div className="h-px w-16 mx-auto bg-primary/70 mb-10 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.3s' }}></div>
+          
+          <p className="font-sans max-w-2xl mx-auto mb-10 text-foreground/80 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             Chaque jour, nous préparons avec passion une large gamme de pains, viennoiseries et pâtisseries 
             pour satisfaire toutes vos envies gourmandes.
           </p>
           <a 
             href="/produits" 
-            className="inline-block font-montserrat bg-white text-bakery-brown-dark px-8 py-4 rounded-full hover:bg-bakery-beige-light transition-colors duration-300"
+            className="btn-secondary group opacity-0 animate-fade-in"
+            style={{ animationDelay: '0.7s' }}
           >
-            Découvrir nos produits
+            DÉCOUVRIR NOS PRODUITS
+            <span className="ml-2">→</span>
           </a>
         </div>
       </section>
@@ -140,33 +161,33 @@ const Process = ({
 }) => {
   return (
     <div 
-      className="p-8 bg-white rounded-2xl text-center opacity-0 animate-[fade-in_1s_ease-out_forwards] hover:shadow-xl transition-all duration-500"
+      className="border border-border/30 p-8 text-center opacity-0 animate-fade-in hover:border-primary/50 transition-all duration-500"
       style={{ animationDelay: `${delay}s` }}
     >
-      <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-bakery-cream text-bakery-brown-dark mb-6">
+      <div className="inline-flex items-center justify-center mb-6 text-foreground/80">
         {icon}
       </div>
-      <h3 className="font-cormorant text-2xl text-bakery-brown-dark mb-4">{title}</h3>
-      <p className="font-montserrat text-bakery-brown">{description}</p>
+      <h3 className="font-sans text-xl tracking-wide mb-6">{title}</h3>
+      <p className="font-sans text-foreground/70">{description}</p>
     </div>
   );
 };
 
 const ingredients = [
   {
-    title: "Des farines sélectionnées",
+    title: "DES FARINES SÉLECTIONNÉES",
     description: "Nous utilisons des farines de blé issues de l'agriculture raisonnée, riches en goût et en nutriments."
   },
   {
-    title: "Notre levain naturel",
+    title: "NOTRE LEVAIN NATUREL",
     description: "Fabriqué à partir de farine et d'eau, notre levain est cultivé quotidiennement pour garantir sa vivacité."
   },
   {
-    title: "Du beurre AOP",
+    title: "DU BEURRE AOP",
     description: "Pour nos viennoiseries, nous n'utilisons que du beurre fin de qualité supérieure."
   },
   {
-    title: "Des œufs frais",
+    title: "DES ŒUFS FRAIS",
     description: "Issus d'élevages en plein air pour toutes nos pâtisseries."
   }
 ];

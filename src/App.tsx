@@ -1,3 +1,4 @@
+
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -20,7 +21,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="flex flex-col min-h-screen bg-bakery-beige-light">
+        <div className="flex flex-col min-h-screen bg-bakery-dark text-foreground">
           <Navbar />
           <main className="flex-grow">
             <Routes>
