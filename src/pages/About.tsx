@@ -5,22 +5,22 @@ import { Separator } from "@/components/ui/separator";
 
 const About = () => {
   return (
-    <div className="flex flex-col bg-bakery-dark">
+    <div className="flex flex-col bg-bakery-beige-light text-bakery-brown-dark">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop"
             alt="Boulangerie artisanale"
-            className="w-full h-full object-cover opacity-20 animate-zoom-in"
+            className="w-full h-full object-cover opacity-30 animate-zoom-in"
           />
         </div>
-        <div className="absolute inset-0 bg-black/60 z-[1]"></div>
-        <div className="relative h-full flex items-center justify-center text-white z-10">
+        <div className="absolute inset-0 bg-bakery-brown/20 z-[1]"></div>
+        <div className="relative h-full flex items-center justify-center text-bakery-brown-dark z-10">
           <div className="text-center">
             <h1 className="font-sans text-5xl tracking-widest mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>NOTRE HISTOIRE</h1>
             
-            <div className="h-px w-24 mx-auto bg-white/30 mb-8 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.8s' }}></div>
+            <div className="h-px w-24 mx-auto bg-bakery-brown/30 mb-8 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.8s' }}></div>
             
             <p className="max-w-xl mx-auto text-lg tracking-wide opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
               Une tradition familiale depuis plus de 10 ans
@@ -34,11 +34,11 @@ const About = () => {
         <div className="container mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="space-y-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-              <h2 className="font-sans text-4xl tracking-widest">NOTRE SAVOIR-FAIRE</h2>
+              <h2 className="font-sans text-4xl tracking-widest text-bakery-brown-dark">NOTRE SAVOIR-FAIRE</h2>
               
-              <div className="h-px w-16 bg-primary/70 origin-left animate-reveal" style={{ animationDelay: '0.6s' }}></div>
+              <div className="h-px w-16 bg-bakery-brown/70 origin-left animate-reveal" style={{ animationDelay: '0.6s' }}></div>
               
-              <div className="text-foreground/80 space-y-6">
+              <div className="text-bakery-brown/80 space-y-6">
                 <p>
                   Délice de Stains est une boulangerie artisanale où chaque pain, 
                   chaque viennoiserie raconte une histoire de passion et de tradition.
@@ -64,9 +64,9 @@ const About = () => {
       <Separator className="divider max-w-xl" />
 
       {/* Values Section */}
-      <section className="section-padding bg-bakery-dark-brown/50">
+      <section className="section-padding bg-bakery-beige-medium/50">
         <div className="container mx-auto">
-          <h2 className="font-sans text-4xl text-center tracking-widest mb-16 opacity-0 animate-fade-in">
+          <h2 className="font-sans text-4xl text-center tracking-widest mb-16 opacity-0 animate-fade-in text-bakery-brown-dark">
             NOS VALEURS
           </h2>
           
@@ -99,7 +99,7 @@ const About = () => {
       <section className="section-padding">
         <div className="container mx-auto">
           <div className="max-w-3xl mx-auto">
-            <h2 className="font-sans text-4xl text-center tracking-widest mb-16 opacity-0 animate-fade-in">
+            <h2 className="font-sans text-4xl text-center tracking-widest mb-16 opacity-0 animate-fade-in text-bakery-brown-dark">
               NOTRE ÉQUIPE
             </h2>
             
@@ -128,13 +128,13 @@ const About = () => {
       <Separator className="divider max-w-xl" />
 
       {/* Contact CTA */}
-      <section className="section-padding bg-bakery-dark-brown/50">
+      <section className="section-padding bg-bakery-beige-medium/50">
         <div className="container mx-auto text-center">
-          <h2 className="font-sans text-4xl tracking-widest mb-8 opacity-0 animate-fade-in">VENEZ NOUS RENCONTRER</h2>
+          <h2 className="font-sans text-4xl tracking-widest mb-8 opacity-0 animate-fade-in text-bakery-brown-dark">VENEZ NOUS RENCONTRER</h2>
           
-          <div className="h-px w-16 mx-auto bg-primary/70 mb-10 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.3s' }}></div>
+          <div className="h-px w-16 mx-auto bg-bakery-brown/70 mb-10 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.3s' }}></div>
           
-          <p className="text-lg mb-10 max-w-2xl mx-auto text-foreground/80 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          <p className="text-lg mb-10 max-w-2xl mx-auto text-bakery-brown/80 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             Découvrez nos produits artisanaux et partagez notre passion pour la boulangerie traditionnelle
           </p>
           <Link 
@@ -172,8 +172,8 @@ const ValueCard = ({
           className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
         />
       </div>
-      <h3 className="font-sans text-xl tracking-wide mb-4">{title}</h3>
-      <p className="font-sans text-foreground/70">{description}</p>
+      <h3 className="font-sans text-xl tracking-wide mb-4 text-bakery-brown-dark">{title}</h3>
+      <p className="font-sans text-bakery-brown/70">{description}</p>
     </div>
   );
 };
@@ -202,12 +202,13 @@ const TeamMember = ({
         <img src={imageSrc} alt={name} className="absolute inset-0 w-full h-full object-cover" />
       </div>
       <div className="text-center md:text-left">
-        <h3 className="font-sans text-2xl tracking-wide mb-2">{name}</h3>
-        <p className="font-medium text-primary/80 mt-2 mb-6">{role}</p>
-        <p className="text-foreground/70">{description}</p>
+        <h3 className="font-sans text-2xl tracking-wide mb-2 text-bakery-brown-dark">{name}</h3>
+        <p className="font-medium text-bakery-brown/80 mt-2 mb-6">{role}</p>
+        <p className="text-bakery-brown/70">{description}</p>
       </div>
     </div>
   );
 };
 
 export default About;
+
