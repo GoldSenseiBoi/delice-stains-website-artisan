@@ -6,11 +6,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-bakery-brown-dark text-bakery-cream py-8 relative overflow-hidden">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-bakery-dark-brown via-bakery-brown-dark to-bakery-brown opacity-40 z-0"></div>
-      
-      <div className="container mx-auto px-4 relative z-10">
+    <footer className="bg-bakery-brown-dark text-bakery-cream py-8">
+      <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and Description */}
           <div className="flex flex-col items-center md:items-start">

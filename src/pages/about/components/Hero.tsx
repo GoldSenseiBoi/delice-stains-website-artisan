@@ -5,14 +5,13 @@ const Hero = () => {
   return (
     <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-t from-bakery-brown-dark/70 to-transparent z-[1]"></div>
         <img
           src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=2072&auto=format&fit=crop"
           alt="Boulangerie artisanale"
           className="w-full h-full object-cover opacity-30 animate-zoom-in"
         />
       </div>
-      <div className="absolute inset-0 bg-bakery-brown/20 z-[2]"></div>
+      <div className="absolute inset-0 bg-bakery-brown/20 z-[1]"></div>
       <div className="relative h-full flex items-center justify-center text-bakery-brown-dark z-10">
         <div className="text-center">
           <h1 className="font-sans text-5xl tracking-widest mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>

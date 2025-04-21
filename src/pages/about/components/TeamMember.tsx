@@ -19,7 +19,7 @@ const TeamMember = ({ name, role, description, imageSrc, imagePosition, delay }:
       style={{ animationDelay: `${delay}s` }}
     >
       <div className="relative h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-bakery-brown-dark/80 to-black/30 z-10"></div>
+        <div className="absolute inset-0 bg-black/30 z-10"></div>
         <img src={imageSrc} alt={name} className="absolute inset-0 w-full h-full object-cover" />
       </div>
       <div className="text-center md:text-left">

@@ -12,7 +12,7 @@ const ValueCard = ({ title, description, imageSrc, delay }: ValueCardProps) => {
   return (
     <div className="group opacity-0 animate-fade-in" style={{ animationDelay: `${delay}s` }}>
       <div className="relative h-80 mb-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-bakery-brown-dark/80 to-black/40 z-10 group-hover:opacity-70 transition-opacity duration-500"></div>
+        <div className="absolute inset-0 bg-black/40 z-10 group-hover:bg-black/20 transition-colors duration-500"></div>
         <img 
           src={imageSrc} 
           alt={title} 
