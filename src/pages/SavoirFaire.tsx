@@ -6,26 +6,36 @@ const SavoirFaire = () => {
     <div className="flex flex-col bg-bakery-beige-light">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center z-0 animate-zoom-in opacity-90"
-          style={{ 
-            backgroundImage: "url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=1800')",
-            backgroundPosition: "center",
-          }}
-        />
-        <div className="absolute inset-0 bg-black/60 z-[1]"></div>
-        <div className="container relative z-10 px-6 text-center">
-          <h1 className="font-sans text-5xl md:text-6xl tracking-widest mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>
-            NOTRE SAVOIR-FAIRE
-          </h1>
-          
-          <div className="h-px w-24 mx-auto bg-white/30 mb-8 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.8s' }}></div>
-          
-          <p className="font-sans text-lg tracking-wider max-w-2xl mx-auto opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
-            La tradition boulangère transmise de génération en génération
-          </p>
-        </div>
-      </section>
+  <div 
+    className="absolute inset-0 bg-cover bg-center z-0 animate-zoom-in opacity-80"
+    style={{ 
+      backgroundImage: "url('https://images.unsplash.com/photo-1517433670267-08bbd4be890f?q=80&w=1800')",
+      backgroundPosition: "center",
+    }}
+  />
+  <div className="absolute inset-0 bg-black/50 z-[1]"></div>
+  <div className="container relative z-10 px-6 text-center text-white">
+    <h1 
+      className="font-sans text-5xl md:text-6xl tracking-widest mb-8 opacity-0 animate-fade-in drop-shadow-lg"
+      style={{ animationDelay: '0.5s' }}
+    >
+      NOTRE SAVOIR-FAIRE
+    </h1>
+    
+    <div 
+      className="h-px w-24 mx-auto bg-white mb-8 origin-left opacity-0 animate-reveal"
+      style={{ animationDelay: '0.8s' }}
+    ></div>
+    
+    <p 
+      className="font-sans text-lg tracking-wider max-w-2xl mx-auto opacity-0 animate-fade-in drop-shadow-md"
+      style={{ animationDelay: '1s' }}
+    >
+      La tradition boulangère transmise de génération en génération
+    </p>
+  </div>
+</section>
+
 
       {/* Introduction */}
       <section className="section-padding">

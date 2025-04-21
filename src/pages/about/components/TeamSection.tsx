@@ -1,5 +1,4 @@
 
-import React from 'react';
 import TeamMember from './TeamMember';
 
 const TeamSection = () => {
@@ -23,7 +22,7 @@ const TeamSection = () => {
               name="MARIE DUPONT"
               role="Pâtissière"
               description="Marie apporte sa créativité et sa minutie à chaque création, rendant chaque pâtisserie unique et délicieuse."
-              imageSrc="https://images.unsplash.com/photo-1545224144-2d2016b5a151?q=80&w=1480&auto=format&fit=crop"
+              imageSrc="../../public/images/marie.jpg"
               imagePosition="right"
               delay={0.6}
             />

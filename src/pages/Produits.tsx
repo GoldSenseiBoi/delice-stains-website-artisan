@@ -6,24 +6,36 @@ const Produits = () => {
     <div className="flex flex-col bg-bakery-beige-light">
       {/* Header Banner */}
       <section className="relative py-20 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="images/produit.jpg"
-            alt="Boulangerie artisanale"
-            className="w-full h-full object-cover opacity-90 animate-zoom-in"
-          />
-        </div>
-        <div className="absolute inset-0 bg-black/60 z-[1]"></div>
-        <div className="container relative z-10 text-center">
-          <h1 className="font-sans text-5xl tracking-widest mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>NOS PRODUITS</h1>
-          
-          <div className="h-px w-24 mx-auto bg-white/30 mb-8 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.8s' }}></div>
-          
-          <p className="max-w-2xl mx-auto text-lg tracking-wide opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
-            Des créations artisanales préparées avec passion et savoir-faire
-          </p>
-        </div>
-      </section>
+  <div className="absolute inset-0">
+    <img
+      src="./images/produit.jpg"
+      alt="Boulangerie artisanale"
+      className="w-full h-full object-cover opacity-60 animate-zoom-in"
+    />
+  </div>
+  <div className="absolute inset-0 bg-black/50 z-[1]"></div>
+  <div className="container relative z-10 text-center text-white">
+    <h1
+      className="font-sans text-5xl tracking-widest mb-8 opacity-0 animate-fade-in drop-shadow-lg"
+      style={{ animationDelay: '0.5s' }}
+    >
+      NOS PRODUITS
+    </h1>
+
+    <div
+      className="h-px w-24 mx-auto bg-white mb-8 origin-left opacity-0 animate-reveal"
+      style={{ animationDelay: '0.8s' }}
+    ></div>
+
+    <p
+      className="max-w-2xl mx-auto text-lg tracking-wide opacity-0 animate-fade-in drop-shadow-md"
+      style={{ animationDelay: '1s' }}
+    >
+      Des créations artisanales préparées avec passion et savoir-faire
+    </p>
+  </div>
+</section>
+
 
       {/* Introduction */}
       <section className="py-12">
@@ -49,13 +61,13 @@ const Produits = () => {
             name: "BAGUETTE TRADITION",
             description: "Préparée selon une recette traditionnelle, avec une mie alvéolée et une croûte croustillante.",
             highlight: true,
-            imageSrc: "https://images.unsplash.com/photo-1549931319-a545dcf3bc7c?q=80&w=1470&auto=format&fit=crop"
+            imageSrc: "../../public/images/baguette-tradition.jpg"
           },
           {
             name: "PAIN AU LEVAIN",
             description: "Fabriqué avec notre levain naturel, ce pain offre des saveurs complexes et une excellente conservation.",
             highlight: true,
-            imageSrc: "https://images.unsplash.com/photo-1586444248890-2be5022b458b?q=80&w=1470&auto=format&fit=crop"
+            imageSrc: "../../public/images/levain.jpg"
           },
           {
             name: "PAIN COMPLET",
@@ -67,7 +79,7 @@ const Produits = () => {
             name: "PAIN AUX CÉRÉALES",
             description: "Agrémenté d'un mélange de graines (tournesol, lin, sésame), pour un pain savoureux et croquant.",
             highlight: true,
-            imageSrc: "https://images.unsplash.com/photo-1565181917578-a87fac756f49?q=80&w=1470&auto=format&fit=crop"
+            imageSrc: "../../public/images/cereales.jpg"
           },
           {
             name: "PAIN DE CAMPAGNE",
@@ -79,7 +91,7 @@ const Produits = () => {
             name: "PAIN DE SEIGLE",
             description: "Sa saveur caractéristique et sa texture dense en font le compagnon idéal des fromages et charcuteries.",
             highlight: false,
-            imageSrc: "https://images.unsplash.com/photo-1603163694235-937df0e28c08?q=80&w=1470&auto=format&fit=crop"
+            imageSrc: "../../public/images/seigle.jpg"
           }
         ]}
       />
@@ -102,22 +114,22 @@ const Produits = () => {
             name: "PAIN AU CHOCOLAT",
             description: "Une viennoiserie généreuse garnie de deux barres de chocolat noir intense.",
             highlight: true,
-            imageSrc: "https://images.unsplash.com/photo-1626094309830-abbb0c99da4a?q=80&w=1632&auto=format&fit=crop"
+            imageSrc: "../../public/images/PainAuChoc.jpg"
           },
           {
             name: "PAIN AUX RAISINS",
             description: "Une spirale de pâte feuilletée garnie de crème pâtissière et de raisins secs moelleux.",
             highlight: true,
-            imageSrc: "https://images.unsplash.com/photo-1601312540037-095ace5cd4b3?q=80&w=1470&auto=format&fit=crop"
+            imageSrc: "../../public/images/pain-au-raisin.jpg"
           },
           {
             name: "PAIN SUISSE",
             description: "Délicieuse viennoiserie à la crème pâtissière et aux pépites de chocolat.",
             highlight: true,
-            imageSrc: "https://plus.unsplash.com/premium_photo-1663853120700-20fe66e0438e?q=80&w=1470&auto=format&fit=crop"
+            imageSrc: "../../public/images/suisses.webp"
           },
           {
-            name: "CHAUSSON AUX POMMES",
+            name: "TARTE AUX POMMES",
             description: "Une pâte feuilletée dorée enveloppant une compote de pommes à la cannelle.",
             highlight: false,
             imageSrc: "https://images.unsplash.com/photo-1621743478914-cc8a86d7e7b5?q=80&w=1374&auto=format&fit=crop"
@@ -143,16 +155,16 @@ const Produits = () => {
             name: "FLAN PÂTISSIER",
             description: "Notre spécialité : un flan crémeux à la vanille et aux œufs frais, avec une texture incomparable.",
             highlight: true,
-            imageSrc: "https://images.unsplash.com/photo-1621236378699-8597faf6a11a?q=80&w=1374&auto=format&fit=crop"
+            imageSrc: "../../public/images/flan.jpg"
           },
           {
             name: "ÉCLAIR AU CHOCOLAT",
             description: "Pâte à choux garnie d'une crème pâtissière au chocolat et recouverte d'un glaçage chocolat.",
             highlight: false,
-            imageSrc: "https://images.unsplash.com/photo-1526590654793-d0104c4b8ad0?q=80&w=1374&auto=format&fit=crop"
+            imageSrc: "../../public/images/Eclairs.png"
           },
           {
-            name: "TARTE AUX FRUITS",
+            name: "TARTE AUX FRUITS ROUGES",
             description: "Pâte sablée garnie d'une crème d'amande et de fruits frais de saison.",
             highlight: false,
             imageSrc: "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?q=80&w=1470&auto=format&fit=crop"
@@ -161,7 +173,7 @@ const Produits = () => {
             name: "MILLEFEUILLE",
             description: "Alternance de pâte feuilletée croustillante et de crème pâtissière à la vanille.",
             highlight: false,
-            imageSrc: "https://images.unsplash.com/photo-1602351447937-745cb720612f?q=80&w=1586&auto=format&fit=crop"
+            imageSrc: "../../public/images/millefeuille.jpeg"
           }
         ]}
       />
@@ -178,7 +190,7 @@ const Produits = () => {
             name: "QUICHE LORRAINE",
             description: "Pâte brisée garnie de lardons, d'œufs et de crème, parfaite pour un déjeuner sur le pouce.",
             highlight: false,
-            imageSrc: "https://images.unsplash.com/photo-1629536037504-904c7e6eade4?q=80&w=1470&auto=format&fit=crop"
+            imageSrc: "../../public/images/quiche.jpeg"
           },
           {
             name: "SANDWICH BAGUETTE",

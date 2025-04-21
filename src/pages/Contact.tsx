@@ -6,24 +6,40 @@ const Contact = () => {
     <div className="flex flex-col bg-bakery-beige-light">
       {/* Header Banner */}
       <section className="relative py-20 flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?q=80&w=2070&auto=format&fit=crop"
-            alt="Boulangerie artisanale"
-            className="w-full h-full object-cover opacity-80 animate-zoom-in"
-          />
-        </div>
-        <div className="absolute inset-0 bg-black/60 z-[1]"></div>
-        <div className="container relative z-10 text-center">
-          <h1 className="font-sans text-5xl tracking-widest mb-8 opacity-0 animate-fade-in" style={{ animationDelay: '0.5s' }}>CONTACT</h1>
-          
-          <div className="h-px w-24 mx-auto bg-white/30 mb-8 origin-left opacity-0 animate-reveal" style={{ animationDelay: '0.8s' }}></div>
-          
-          <p className="max-w-2xl mx-auto text-lg tracking-wide opacity-0 animate-fade-in" style={{ animationDelay: '1s' }}>
-            Venez nous rencontrer ou contactez-nous pour toute information
-          </p>
-        </div>
-      </section>
+  <div className="absolute inset-0">
+    <img
+      src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?q=80&w=2070&auto=format&fit=crop"
+      alt="Boulangerie artisanale"
+      className="w-full h-full object-cover opacity-80 animate-zoom-in"
+    />
+  </div>
+
+  {/* Calque sombre pour le contraste */}
+  <div className="absolute inset-0 bg-black/60 z-[1]"></div>
+
+  {/* Contenu avec texte blanc et ombres pour lisibilité */}
+  <div className="container relative z-10 text-center text-white">
+    <h1
+      className="font-sans text-5xl tracking-widest mb-8 opacity-0 animate-fade-in drop-shadow-lg"
+      style={{ animationDelay: '0.5s' }}
+    >
+      CONTACT
+    </h1>
+
+    <div
+      className="h-px w-24 mx-auto bg-white mb-8 origin-left opacity-0 animate-reveal"
+      style={{ animationDelay: '0.8s' }}
+    ></div>
+
+    <p
+      className="max-w-2xl mx-auto text-lg tracking-wide opacity-0 animate-fade-in drop-shadow-md"
+      style={{ animationDelay: '1s' }}
+    >
+      Venez nous rencontrer ou contactez-nous pour toute information
+    </p>
+  </div>
+</section>
+
 
       {/* Contact Info */}
       <section className="section-padding">
@@ -96,15 +112,18 @@ const Contact = () => {
                 <div className="h-px w-16 bg-primary/70 mb-12 origin-left animate-reveal" style={{ animationDelay: '0.9s' }}></div>
                 
                 <div className="h-80 overflow-hidden border border-border/30">
-                  {/* Embedded map iframe would go here */}
-                  <div className="w-full h-full flex items-center justify-center bg-bakery-dark-brown/50">
-                    <p className="text-center text-foreground/70 p-4">
-                      Carte interactive
-                      <br />
-                      <span className="text-sm">(29 rue Parmentier, 93240 Stains)</span>
-                    </p>
-                  </div>
-                </div>
+                <iframe
+                  title="Carte interactive"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.4913595792596!2d2.379274115674724!3d48.95210687929512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ec5522fd47b%3A0x2c77e045f0286ae5!2s29%20Rue%20Parmentier%2C%2093240%20Stains!5e0!3m2!1sfr!2sfr!4v1713800000000!5m2!1sfr!2sfr"
+                  width="100%"
+                  height="100%"
+                  className="border-0 w-full h-full"
+                  allowFullScreen={false}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
                 <p className="mt-6 text-foreground/70">
                   Nous sommes facilement accessibles en transports en commun et disposons d'un stationnement à proximité.
                 </p>
@@ -197,7 +216,7 @@ const Contact = () => {
             Pour les commandes spéciales (événements, grandes quantités), nous vous invitons à nous contacter au moins 48 heures à l'avance.
           </p>
           <a 
-            href="tel:+33XXXXXXXXX" 
+            href="tel:+33123456789" 
             className="btn-secondary group opacity-0 animate-fade-in"
             style={{ animationDelay: '0.7s' }}
           >
