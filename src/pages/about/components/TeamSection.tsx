@@ -22,7 +22,7 @@ const TeamSection = () => {
               name="MARIE DUPONT"
               role="Pâtissière"
               description="Marie apporte sa créativité et sa minutie à chaque création, rendant chaque pâtisserie unique et délicieuse."
-              imageSrc="../../public/images/marie.jpg"
+              imageSrc="src/images/marie.jpg"
               imagePosition="right"
               delay={0.6}
             />

@@ -12,19 +12,19 @@ const ValuesSection = () => {
           <ValueCard 
             title="TRADITION" 
             description="Des méthodes authentiques transmises de génération en génération"
-            imageSrc="../public/images/tradition.jpg"
+            imageSrc="src/images/tradition.jpg"
             delay={0.3}
           />
           <ValueCard 
             title="QUALITÉ" 
             description="Une sélection rigoureuse des meilleurs ingrédients"
-            imageSrc="../../public/images/quality.jpg"
+            imageSrc="src/images/quality.jpg"
             delay={0.6}
           />
           <ValueCard 
             title="PASSION" 
             description="Un amour du métier qui se retrouve dans chacune de nos créations"
-            imageSrc="../../public/images/passion.jpg"
+            imageSrc="src/images/passion.jpg"
             delay={0.9}
           />
         </div>

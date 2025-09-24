@@ -25,7 +25,7 @@ const StorySection = () => {
           </div>
           <div className="relative h-[600px] overflow-hidden opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <img
-              src="../public/images/savoir.jpg"
+              src="src/images/savoir.jpg"
               alt="Fabrication du pain"
               className="absolute inset-0 w-full h-full object-cover"
             />

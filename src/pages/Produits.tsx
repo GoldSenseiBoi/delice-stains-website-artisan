@@ -8,7 +8,7 @@ const Produits = () => {
       <section className="relative py-20 flex items-center justify-center overflow-hidden">
   <div className="absolute inset-0">
     <img
-      src="./images/produit.jpg"
+      src="src/images/produit.jpg"
       alt="Boulangerie artisanale"
       className="w-full h-full object-cover opacity-80 animate-zoom-in"
     />
@@ -61,13 +61,13 @@ const Produits = () => {
             name: "BAGUETTE TRADITION",
             description: "Préparée selon une recette traditionnelle, avec une mie alvéolée et une croûte croustillante.",
             highlight: true,
-            imageSrc: "../../public/images/baguette-tradition.jpg"
+            imageSrc: "src/images/baguette-tradition.jpg"
           },
           {
             name: "PAIN AU LEVAIN",
             description: "Fabriqué avec notre levain naturel, ce pain offre des saveurs complexes et une excellente conservation.",
             highlight: true,
-            imageSrc: "../../public/images/levain.jpg"
+            imageSrc: "src/images/levain.jpg"
           },
           {
             name: "PAIN COMPLET",
@@ -79,7 +79,7 @@ const Produits = () => {
             name: "PAIN AUX CÉRÉALES",
             description: "Agrémenté d'un mélange de graines (tournesol, lin, sésame), pour un pain savoureux et croquant.",
             highlight: true,
-            imageSrc: "../../public/images/cereales.jpg"
+            imageSrc: "src/images/cereales.jpg"
           },
           {
             name: "PAIN DE CAMPAGNE",
@@ -91,7 +91,7 @@ const Produits = () => {
             name: "PAIN DE SEIGLE",
             description: "Sa saveur caractéristique et sa texture dense en font le compagnon idéal des fromages et charcuteries.",
             highlight: false,
-            imageSrc: "../../public/images/seigle.jpg"
+            imageSrc: "src/images/seigle.jpg"
           }
         ]}
       />
@@ -114,19 +114,19 @@ const Produits = () => {
             name: "PAIN AU CHOCOLAT",
             description: "Une viennoiserie généreuse garnie de deux barres de chocolat noir intense.",
             highlight: true,
-            imageSrc: "../../public/images/PainAuChoc.jpg"
+            imageSrc: "src/images/PainAuChoc.jpg"
           },
           {
             name: "PAIN AUX RAISINS",
             description: "Une spirale de pâte feuilletée garnie de crème pâtissière et de raisins secs moelleux.",
             highlight: true,
-            imageSrc: "../../public/images/pain-au-raisin.jpg"
+            imageSrc: "src/images/pain-au-raisin.jpg"
           },
           {
             name: "PAIN SUISSE",
             description: "Délicieuse viennoiserie à la crème pâtissière et aux pépites de chocolat.",
             highlight: true,
-            imageSrc: "../../public/images/suisses.webp"
+            imageSrc: "src/images/suisses.webp"
           },
           {
             name: "TARTE AUX POMMES",
@@ -155,13 +155,13 @@ const Produits = () => {
             name: "FLAN PÂTISSIER",
             description: "Notre spécialité : un flan crémeux à la vanille et aux œufs frais, avec une texture incomparable.",
             highlight: true,
-            imageSrc: "../../public/images/flan.jpg"
+            imageSrc: "src/images/flan.jpg"
           },
           {
             name: "ÉCLAIR AU CHOCOLAT",
             description: "Pâte à choux garnie d'une crème pâtissière au chocolat et recouverte d'un glaçage chocolat.",
             highlight: false,
-            imageSrc: "../../public/images/Eclairs.png"
+            imageSrc: "src/images/Eclairs.png"
           },
           {
             name: "TARTE AUX FRUITS ROUGES",
@@ -173,7 +173,7 @@ const Produits = () => {
             name: "MILLEFEUILLE",
             description: "Alternance de pâte feuilletée croustillante et de crème pâtissière à la vanille.",
             highlight: false,
-            imageSrc: "../../public/images/millefeuille.jpeg"
+            imageSrc: "src/images/millefeuille.jpeg"
           }
         ]}
       />
@@ -190,7 +190,7 @@ const Produits = () => {
             name: "QUICHE LORRAINE",
             description: "Pâte brisée garnie de lardons, d'œufs et de crème, parfaite pour un déjeuner sur le pouce.",
             highlight: false,
-            imageSrc: "../../public/images/quiche.jpeg"
+            imageSrc: "src/images/quiche.jpeg"
           },
           {
             name: "SANDWICH BAGUETTE",
